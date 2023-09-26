@@ -1,0 +1,129 @@
+/* USER VARIABLES SECTION */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+:root {
+	--accent: #647ec1;
+	--text: #343a40;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+/* @font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; } */
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+/* USER STYLES */
+.btn{
+	text-decoration: none;
+	color: var(--text);
+
+
+}
+.image {
+	max-width: 100%;
+	margin-bottom: var(--bs-gutter-x);
+	border-radius: 4px;
+}
+
+.accent {
+	color: var(--accent);
+	font-weight: bold;
+}
+.container{
+	max-width: 1458px;
+   margin: 0 auto;
+	 padding: 0 32px;
+}
+
+
+.header .container{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	justify-content: space-between;
+
+}
+
+.header__left{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.location{
+	margin-right: 5px;
+
+}
+.header__nav-item{
+	margin-right: 15px;
+}
+
+.account{
+	padding-right: 5px;
+
+}
+/* main */
+.main .container{
+	padding-top: 120px;
+	display: flex;
+
+}
+.college-main{
+	border-radius: 45px;
+	margin-left: 50px;
+}
+
+.main__right{
+	padding-left: 45px;
+	padding-top: 60px;
+
+}
+.title span{
+	background-color: var(--accent);
+	color: #fff;
+}
+.subtitle{
+padding-top: 25px;
+padding-bottom: 45px;
+}
+
+.main__btn{
+	border: 2px solid var(--accent);
+	padding: 12px 10px;
+	border-radius: 35px;
+	transition-duration:0.25s ;
+}
+.main__btn:hover{
+	padding: 13px 11px;
+	background-color: #647ec1;
+	color: #fff;
+
+
+}
